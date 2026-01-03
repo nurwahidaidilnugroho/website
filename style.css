@@ -303,7 +303,8 @@ body {
 
   .btn-primary,
   .btn-secondary,
-  .btn-outline {
+  .btn-outline,
+  .btn-primary-button1 {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
@@ -330,7 +331,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .hero {
     padding: 60px 12px;
   }
@@ -361,7 +362,8 @@ body {
 
   .btn-primary,
   .btn-secondary,
-  .btn-outline {
+  .btn-outline,
+  .btn-primary-button1 {
     padding: 8px 12px;
     font-size: 0.85rem;
   }
@@ -399,7 +401,8 @@ body {
 
   .btn-primary,
   .btn-secondary,
-  .btn-outline {
+  .btn-outline,
+  .btn-primary-button1 {
     padding: 6px 10px;
     font-size: 0.8rem;
   }
