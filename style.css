@@ -372,19 +372,14 @@ body {
     font-size: 1rem;
   }
 
+  /* Hide specific hero paragraph on tablet/phone */
+  .hero-desc {
+    display: none;
+  }
+
   /* Mobile navbar: show toggle, hide inline nav */
   .navbar {
     position: relative;
-  }
-
-  .nav-toggle {
-    display: inline-block;
-    background: transparent;
-    border: none;
-    color: var(--text-bright);
-    font-size: 1.4rem;
-    cursor: pointer;
-    margin-left: 12px;
   }
 
   .navbar nav {
