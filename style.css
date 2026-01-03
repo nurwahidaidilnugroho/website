@@ -371,6 +371,49 @@ body {
   .cta p {
     font-size: 1rem;
   }
+
+  /* Mobile navbar: show toggle, hide inline nav */
+  .navbar {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: var(--text-bright);
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  /* When navbar has .open, show a stacked mobile menu */
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgba(15, 61, 46, 0.98);
+    padding: 12px 16px 18px;
+    z-index: 60;
+  }
+
+  .navbar.open nav a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .navbar.open .btn-outline {
+    display: inline-block;
+    margin-top: 8px;
+  }
 }
 
 /* ====== MOBILE (≤576px) ====== */
