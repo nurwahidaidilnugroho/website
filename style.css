@@ -267,13 +267,6 @@ body {
 
 /* ====== LARGE DESKTOP (≥1400px) ====== */
 @media screen and (min-width: 1400px) {
-  .hero h1 {
-    font-size: 4.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2.7rem;
-  }
 
   .hero-content {
     max-width: 1000px;
@@ -282,13 +275,6 @@ body {
 
 /* ====== DESKTOP / LAPTOP (≤1200px) ====== */
 @media screen and (max-width: 1200px) {
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2.2rem;
-  }
 
   .hero-content {
     max-width: 800px;
@@ -300,15 +286,6 @@ body {
   .hero {
     height: auto;
     padding: 120px 0;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-    margin-top: 0;
-  }
-
-  .hero h2 {
-    font-size: 1.8rem;
   }
 
   .hero p {
@@ -339,13 +316,6 @@ body {
     max-width: 100%;
   }
 
-  .hero h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero h2 {
-    font-size: 1.4rem;
-  }
 
   .hero p {
     font-size: 0.95rem;
@@ -476,14 +446,6 @@ body {
     padding: 90px 0 70px;
   }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero h2 {
-    font-size: 1.2rem;
-  }
-
   .hero p {
     font-size: 0.9rem;
   }
@@ -516,13 +478,6 @@ body {
 
 /* ====== SMALL MOBILE (≤400px) ====== */
 @media screen and (max-width: 400px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero h2 {
-    font-size: 1.05rem;
-  }
 
   .hero p {
     font-size: 0.85rem;
