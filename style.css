@@ -87,14 +87,11 @@ body {
 }
 
 .hero h1 {
-  /* font-size: 4rem; */
-  font-weight: 700;
   color: var(--primary-accent);
   margin-top: -60px;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
   font-weight: 400;
   margin: 18px 0;
 }
