@@ -13,28 +13,6 @@
 
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- tambahan: CSS kecil untuk toggle navbar di layar kecil -->
-  <style>
-    /* Responsive nav toggle */
-    .nav-toggle { display: none; border: none; background: transparent; color: #fff; font-size: 1.25rem; }
-    .navbar nav { display: flex; gap: 1rem; align-items: center; }
-    @media (max-width: 991.98px) {
-      .nav-toggle { display: inline-block; }
-      .navbar nav {
-        position: absolute;
-        top: 64px;
-        right: 0;
-        background: #0F3D2E;
-        flex-direction: column;
-        width: 220px;
-        padding: 0.75rem;
-        display: none;
-        z-index: 999;
-      }
-      .navbar nav.open { display: flex; }
-      .navbar nav a { padding: 0.5rem 0.75rem; display: block; }
-    }
-  </style>
 </head>
 <body>
 
