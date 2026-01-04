@@ -87,7 +87,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-weight: 700;
   color: var(--primary-accent);
   margin-top: -60px;
