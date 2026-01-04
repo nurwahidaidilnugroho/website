@@ -3,24 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Metode Yassir</title>
+  <link rel="icon" type="image/png" href="image/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- tambahan: CSS kecil untuk toggle navbar di layar kecil -->
+  <style>
+    /* Responsive nav toggle */
+    .nav-toggle { display: none; border: none; background: transparent; color: #fff; font-size: 1.25rem; }
+    .navbar nav { display: flex; gap: 1rem; align-items: center; }
+    @media (max-width: 991.98px) {
+      .nav-toggle { display: inline-block; }
+      .navbar nav {
+        position: absolute;
+        top: 64px;
+        right: 0;
+        background: #0F3D2E;
+        flex-direction: column;
+        width: 220px;
+        padding: 0.75rem;
+        display: none;
+        z-index: 999;
+      }
+      .navbar nav.open { display: flex; }
+      .navbar nav a { padding: 0.5rem 0.75rem; display: block; }
+    }
+  </style>
 </head>
 <body>
 
 <!-- ================= NAVBAR ================= -->
 <header class="navbar" style="background-color: #0F3D2E;">
   <div class="container d-flex justify-content-between align-items-center ">
-    <div class="logo"><img src="image/12.png" alt="Logo Yassir" style="width: 120px; height: auto;"></div>
-    <button class="nav-toggle d-lg-none" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-    <nav class="text-white">
+    <div class="logo"><img src="image/logo.png" alt="Logo Yassir" style="width: 120px; height: auto;"></div>
+    <!-- tombol toggle: tambahkan aria-controls dan aria-expanded -->
+    <button class="nav-toggle d-lg-none" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    <!-- berikan id pada nav untuk dikendalikan oleh tombol -->
+    <nav id="main-nav" class="text-white" aria-hidden="true">
       <a href="index.html">Beranda</a>
       <a href="#">Profil</a>
       <a href="#">Program</a>
@@ -33,7 +58,7 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" style="background-image: url('image/hero-bg.jpeg'); background-size: cover; background-blend-mode: overlay; background-color: rgba(30, 43, 38, 0.75);">
+<section class="hero" style="background-image: url('image/background1.png'); background-size: cover; background-blend-mode: overlay; background-color: rgba(30, 43, 38, 0.20);">
   <div class="hero-overlay">
     <div class="container">
       <div class="row align-items-center">
@@ -41,10 +66,10 @@
         <!-- HERO CONTENT -->
         <div class="col-lg-8 hero-content">
           <h1> Metode Yassir </h1>
-          <h2>
+          <h2 style="color: var(--primary-button1);">
            Pendekatan Data-Driven untuk Memahami Bahasa Al-Qur’an
           </h2>
-          <p>
+          <p style="color: var(--primary-button1);">
             <!-- class="hero-desc" (ini untuk menghilangkan tulisan) -->
            Metode Yassir adalah pendekatan pembelajaran bahasa Arab berbasis data, yang menjadikan Al-Qur’an sebagai corpus utama untuk analisis struktural, statistik, dan linguistik.
           </p>
@@ -60,34 +85,26 @@
 
 
 <section class="section">
-  <div class="container text-center">
-    <div class="section-title">
-      <!-- <h3>MASALAH YANG KITA HADAPI BERSAMA</h3> -->
+    <div class="container text-center">
+        <div class="section-title">
+        <!-- <h3>MASALAH YANG KITA HADAPI BERSAMA</h3> -->
+        </div>
+
+        <p class="mt-3 mx-auto" style="max-width:760px;"><strong>Belajar Bahasa Arab dari Sumbernya</strong></p>
+        <p>Dalam Metode Yassir, pembelajaran bahasa Arab dimulai dari Al-Qur’an, bukan dari contoh terpisah atau teori yang berdiri sendiri. Al-Qur’an ditempatkan sebagai corpus utama, yaitu sumber data bahasa yang dianalisis secara sistematis untuk memahami struktur dan pola bahasa Arabnya.</p>
+
+        <div class="card-custom mx-auto mt-4" style="max-width:900px; text-align:left;">
+            <p>Banyak pembelajar bahasa Arab:</p>
+            <ul>
+                <li>telah mempelajari kaidah nahwu dan sharaf,</li>
+                <li>mengenal istilah-istilah gramatikal,</li>
+                <li>namun masih kesulitan memahami struktur bahasa Al-Qur’an secara utuh.</li>
+            </ul>
+
+            <p>Masalah ini bukan terletak pada kemampuan belajar, melainkan pada cara pembelajaran yang sering terpisah dari teks Al-Qur’an itu sendiri. </p>
+            <p>Bahasa dipelajari sebagai teori, sementara Al-Qur’an hadir hanya sebagai contoh.</p>
+        </div>
     </div>
-
-    <p class="mt-3 mx-auto" style="max-width:760px;">
-      <strong>Belajar Bahasa Arab dari Sumbernya</strong>
-    </p>
-    <p>Dalam Metode Yassir, pembelajaran bahasa Arab dimulai dari Al-Qur’an, bukan dari contoh terpisah atau teori yang berdiri sendiri.
-    Al-Qur’an ditempatkan sebagai corpus utama, yaitu sumber data bahasa yang dianalisis secara sistematis untuk memahami struktur dan pola bahasa Arabnya.</p>
-
-    <div class="card-custom mx-auto mt-4" style="max-width:900px; text-align:left;">
-      <p>Banyak pembelajar bahasa Arab:</p>
-      <ul>
-        <li>telah mempelajari kaidah nahwu dan sharaf,</li>
-        <li>mengenal istilah-istilah gramatikal,</li>
-        <li>namun masih kesulitan memahami struktur bahasa Al-Qur’an secara utuh.</li>
-      </ul>
-
-      <p>
-        Masalah ini bukan terletak pada kemampuan belajar, melainkan pada cara pembelajaran
-        yang sering terpisah dari teks Al-Qur’an itu sendiri.
-      </p>
-      <p>
-        Bahasa dipelajari sebagai teori, sementara Al-Qur’an hadir hanya sebagai contoh.
-      </p>
-    </div>
-  </div>
 </section>
 
 <section class="section bg-light">

@@ -378,6 +378,7 @@ body {
 
   /* Mobile navbar: show toggle, hide inline nav */
   .navbar {
+    overflow: hidden;
     position: relative;
 
   }
