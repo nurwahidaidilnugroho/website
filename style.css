@@ -34,6 +34,7 @@ body {
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--primary);
+  
 }
 
 .navbar nav a {
@@ -149,6 +150,7 @@ body {
   background: #C9A24D;
   border-radius: 8px;
 }
+
 /* ===============================
    SECTION
 ================================ */
@@ -377,6 +379,7 @@ body {
   /* Mobile navbar: show toggle, hide inline nav */
   .navbar {
     position: relative;
+
   }
 
   .navbar nav {
@@ -452,6 +455,8 @@ body {
   .social-links a {
     margin-right: 0.75rem;
   }
+
+ 
 }
 
 /* ====== SMALL MOBILE (≤400px) ====== */
